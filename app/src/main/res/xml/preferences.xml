@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <DropDownPreference
+        app:allowDividerAbove="true"
+        android:defaultValue="@string/pref_default_difficulty_value"
+        android:entries="@array/pref_difficulty_values"
+        android:entryValues="@array/pref_difficulty_values"
+        android:icon="@drawable/ic_round_star_half_24"
+        android:key="@string/key_difficulty_values"
+        android:summary="@string/difficulty_summary"
+        android:title="@string/answers_difficulty"
+        app:useSimpleSummaryProvider="true" />
+</PreferenceScreen>

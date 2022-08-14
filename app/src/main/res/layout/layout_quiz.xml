@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.main.SecondFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="@dimen/space_medium" />
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/mat_card_number_sequence"
@@ -38,51 +37,45 @@
             android:orientation="vertical">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/first_answer_button"
                 style="@style/MyMaterialButtonAnswer"
                 android:layout_width="match_parent"
-                android:paddingVertical="@dimen/space_medium"
+                android:paddingVertical="@dimen/space_small"
                 android:layout_height="wrap_content"
-                android:insetLeft="@dimen/space_xxlarge"
-                android:insetRight="@dimen/space_xxlarge"
                 android:text="241 / 211" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/second_answer_button"
                 style="@style/MyMaterialButtonAnswer"
-                android:paddingVertical="@dimen/space_medium"
+                android:paddingVertical="@dimen/space_small"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:insetLeft="@dimen/space_xxlarge"
-                android:insetRight="@dimen/space_xxlarge"
                 android:text="241 / 211" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/third_answer_button"
                 style="@style/MyMaterialButtonAnswer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingVertical="@dimen/space_medium"
-                android:insetLeft="@dimen/space_xxlarge"
-                android:insetRight="@dimen/space_xxlarge"
+                android:paddingVertical="@dimen/space_small"
                 android:text="241 / 211" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/fourth_answer_button"
                 style="@style/MyMaterialButtonAnswer"
                 android:layout_width="match_parent"
-                android:paddingVertical="@dimen/space_medium"
+                android:paddingVertical="@dimen/space_small"
                 android:layout_height="wrap_content"
-                android:insetLeft="@dimen/space_xxlarge"
-                android:insetRight="@dimen/space_xxlarge"
                 android:text="241 / 211"/>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/no_answer_button"
                 style="@style/MyMaterialButtonAnswer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingVertical="@dimen/space_medium"
-                android:insetLeft="@dimen/space_xxlarge"
-                android:insetRight="@dimen/space_xxlarge"
+                android:paddingVertical="@dimen/space_small"
                 android:text="No answer is correct"
                 android:textAllCaps="false" />
 
         </com.google.android.material.button.MaterialButtonToggleGroup>
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>

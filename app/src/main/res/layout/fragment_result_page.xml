@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.quiz.ResultPageFragment">
+
+    <TextView
+        android:id="@+id/result_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_large"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/result_btn_explain"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="You reached the end" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/result_btn_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show explanation"
+        app:layout_constraintBottom_toTopOf="@id/result_first_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_message" />
+
+    <View
+        android:id="@+id/result_first_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/space_xsmall"
+        android:background="?attr/dividerColor"
+        app:layout_constraintBottom_toTopOf="@id/result_tv_correct_answers_count"
+        app:layout_constraintTop_toBottomOf="@id/result_btn_explain" />
+
+    <TextView
+        android:id="@+id/result_tv_correct_answers_count"
+        style="@style/TextAppearance.Material3.DisplayLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_huge"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/result_tv_correct_answers_count_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_first_divider"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/result_tv_correct_answers_count_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Questions were answered correctly"
+        app:layout_constraintBottom_toTopOf="@id/result_second_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_tv_correct_answers_count" />
+
+
+    <View
+        android:id="@+id/result_second_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/space_xsmall"
+        android:background="?attr/dividerColor"
+        app:layout_constraintBottom_toTopOf="@id/result_tv_continue"
+        app:layout_constraintTop_toBottomOf="@id/result_tv_correct_answers_count_message" />
+
+
+    <TextView
+        android:id="@+id/result_tv_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_small"
+        android:text="How would you like to continue?"
+        app:layout_constraintBottom_toTopOf="@id/result_btn_show_all_explanations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_second_divider" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/result_btn_show_all_explanations"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_small"
+        android:layout_marginTop="@dimen/space_small"
+        android:layout_marginEnd="@dimen/space_mini"
+        android:backgroundTint="@color/white"
+        android:text="All explanations"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/result_btn_restart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_tv_continue" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/result_btn_restart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_mini"
+        android:layout_marginEnd="@dimen/space_small"
+        android:backgroundTint="@color/green_600"
+        android:text="Retry"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/result_btn_show_all_explanations"
+        app:layout_constraintTop_toTopOf="@id/result_btn_show_all_explanations" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,4 +19,26 @@
     <string name="uri_linkedin_nicolas_kargruber">https://www.linkedin.com/in/nicolas-kargruber-78a34123b/?locale=en_US</string>
     <string name="navigation_drawer_open">Nav Drawer is open</string>
     <string name="navigation_drawer_close">Nav Drawer is closed</string>
+
+
+    <!-- Quiz -->
+    <string name="show_hint">Show hint</string>
+    <string name="add_bookmark">Add bookmark</string>
+    <string name="continue_quiz">Continue</string>
+    <string name="give_up">Give Up</string>
+    <string name="quit">Quit</string>
+    <string name="quit_message">You will loose the current progress</string>
+
+
+    <!-- Settings -->
+    <string name="pref_default_difficulty_value">Medium</string>
+    <string name="key_difficulty_values">KEY_DIFFICULTY_VALUES</string>
+    <string name="difficulty_summary">This setting affects only the answers for each number sequence</string>
+    <string name="answers_difficulty">Answer Difficulty</string>
+    <string-array name="pref_difficulty_values">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
 </resources>

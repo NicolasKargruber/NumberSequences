@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/quizPageFragment">
+    <fragment
+        android:id="@+id/quizPageFragment"
+        android:name="com.nicokarg.myapplication.activities.quiz.QuizPageFragment"
+        tools:layout="@layout/fragment_quiz_page"
+        android:label="QuizPageFragment" >
+        <action
+            android:id="@+id/action_quizPageFragment_to_resultPageFragment"
+            app:destination="@id/resultPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultPageFragment"
+        tools:layout="@layout/fragment_result_page"
+        android:name="com.nicokarg.myapplication.activities.quiz.ResultPageFragment"
+        android:label="ResultPageFragment" />
+</navigation>

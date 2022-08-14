@@ -5,6 +5,10 @@
         <item name="android:textColor">@color/material_button_text_color_selector</item>
         <item name="android:backgroundTint">@color/material_button_bg_tint_selector</item>
         <item name="android:checkable">true</item>
+        <item name="android:insetTop">@dimen/space_xxsmall</item>
+        <item name="android:insetBottom">@dimen/space_xxsmall</item>
+        <item name="android:insetRight">@dimen/space_xxlarge</item>
+        <item name="android:insetLeft">@dimen/space_xxlarge</item>
         <item name="android:gravity">center|start</item>
     </style>
 </resources>

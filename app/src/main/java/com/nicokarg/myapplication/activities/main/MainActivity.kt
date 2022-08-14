@@ -9,6 +9,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import com.nicokarg.myapplication.R
 import com.nicokarg.myapplication.activities.about.AboutMeActivity
+import com.nicokarg.myapplication.activities.settings.SettingsActivity
 import com.nicokarg.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -41,6 +42,8 @@ class MainActivity : AppCompatActivity() {
                 when (it.itemId) {
                     R.id.nav_settings -> {
                         Log.d(logTag, "Menu Item Settings clicked")
+                        val intent = Intent(this@MainActivity, SettingsActivity::class.java)
+                        startActivity(intent)
                     }
                     R.id.nav_about -> {
                         Log.d(logTag, "Menu Item About clicked")

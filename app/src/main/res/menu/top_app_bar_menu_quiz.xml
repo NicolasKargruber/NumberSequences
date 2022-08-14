@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nicokarg.myapplication.activities.main.MainActivity">
+    <item
+        android:id="@+id/action_hint"
+        android:orderInCategory="100"
+        android:title="@string/show_hint"
+        android:icon="@drawable/ic_lightbulb_round_outlined_24"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_bookmark"
+        android:orderInCategory="100"
+        android:checkable="true"
+        android:checked="true"
+        android:title="@string/add_bookmark"
+        android:icon="@drawable/menu_item_icon_selector"
+        app:showAsAction="ifRoom" />
+</menu>

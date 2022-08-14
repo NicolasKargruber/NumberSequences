@@ -25,6 +25,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.nicokarg.myapplication.activities.settings.SettingsActivity"/>
+        <activity
+            android:name="com.nicokarg.myapplication.activities.quiz.QuizActivity"/>
+        <activity
             android:name="com.nicokarg.myapplication.activities.about.AboutMeActivity"/>
     </application>
 
