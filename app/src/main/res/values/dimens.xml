@@ -1,3 +1,31 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+
+    <!--space-->
+    <dimen name="space_xmini">2dp</dimen>
+    <dimen name="space_mini">4dp</dimen>
+    <dimen name="space_xxsmall">8dp</dimen>
+    <dimen name="space_xsmall">10dp</dimen>
+    <dimen name="space_small">12dp</dimen>
+    <dimen name="space_medium">16dp</dimen>
+    <dimen name="space_large">20dp</dimen>
+    <dimen name="space_xlarge">28dp</dimen>
+    <dimen name="space_xxlarge">36dp</dimen>
+    <dimen name="space_xxxlarge">48dp</dimen>
+    <dimen name="space_huge">56dp</dimen>
+    <dimen name="space_xhuge">64dp</dimen>
+    <dimen name="space_xxhuge">72dp</dimen>
+
+    <!--text size-->
+    <dimen name="text_xxxsmall">8sp</dimen>
+    <dimen name="text_xxsmall">12sp</dimen>
+    <dimen name="text_xsmall">14sp</dimen>
+    <dimen name="text_small">16sp</dimen>
+    <dimen name="text_medium">20sp</dimen>
+    <dimen name="text_large">24sp</dimen>
+    <dimen name="text_xlarge">28sp</dimen>
+    <dimen name="text_xxlarge">32sp</dimen>
+    <dimen name="text_huge">36sp</dimen>
+    <dimen name="text_xhuge">40sp</dimen>
+    <dimen name="text_xxhuge">44sp</dimen>
 </resources>

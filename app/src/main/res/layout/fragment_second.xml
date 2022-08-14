@@ -4,24 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondFragment">
+    tools:context=".activities.main.SecondFragment">
 
-    <TextView
-        android:id="@+id/textview_second"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/button_second"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button_second"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/previous"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mat_card_number_sequence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_small">
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingVertical="@dimen/space_xhuge"
+                android:text="22 23 33 232 222 22 ? ?" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_medium" />
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/mat_btn_toggle_group_answers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/MyMaterialButtonAnswer"
+                android:layout_width="match_parent"
+                android:paddingVertical="@dimen/space_medium"
+                android:layout_height="wrap_content"
+                android:insetLeft="@dimen/space_xxlarge"
+                android:insetRight="@dimen/space_xxlarge"
+                android:text="241 / 211" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/MyMaterialButtonAnswer"
+                android:paddingVertical="@dimen/space_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetLeft="@dimen/space_xxlarge"
+                android:insetRight="@dimen/space_xxlarge"
+                android:text="241 / 211" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/MyMaterialButtonAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/space_medium"
+                android:insetLeft="@dimen/space_xxlarge"
+                android:insetRight="@dimen/space_xxlarge"
+                android:text="241 / 211" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/MyMaterialButtonAnswer"
+                android:layout_width="match_parent"
+                android:paddingVertical="@dimen/space_medium"
+                android:layout_height="wrap_content"
+                android:insetLeft="@dimen/space_xxlarge"
+                android:insetRight="@dimen/space_xxlarge"
+                android:text="241 / 211"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/MyMaterialButtonAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/space_medium"
+                android:insetLeft="@dimen/space_xxlarge"
+                android:insetRight="@dimen/space_xxlarge"
+                android:text="No answer is correct"
+                android:textAllCaps="false" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

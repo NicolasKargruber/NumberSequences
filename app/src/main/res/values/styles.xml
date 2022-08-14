@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyMaterialButtonAnswer" parent="TextAppearance.AppCompat.Small">
+        <item name="rippleColor">@color/material_button_ripple_color_selector</item>
+        <item name="android:textColor">@color/material_button_text_color_selector</item>
+        <item name="android:backgroundTint">@color/material_button_bg_tint_selector</item>
+        <item name="android:checkable">true</item>
+        <item name="android:gravity">center|start</item>
+    </style>
+</resources>

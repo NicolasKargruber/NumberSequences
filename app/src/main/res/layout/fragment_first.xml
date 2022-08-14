@@ -4,25 +4,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    tools:context=".activities.main.FirstFragment">
 
-    <TextView
-        android:id="@+id/textview_first"
-        android:layout_width="wrap_content"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/first_mat_card_quick"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="@string/hello_first_fragment"
-        app:layout_constraintBottom_toTopOf="@id/button_first"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/space_medium"
+        android:backgroundTint="@color/orange_400"
+        android:clickable="true"
+        android:alpha="0.8"
+        app:cardCornerRadius="10dp"
+        app:rippleColor="@color/white"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/first_mat_card_stats"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
 
-    <Button
-        android:id="@+id/button_first"
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/space_xsmall">
+
+            <TextView
+                android:textSize="@dimen/text_large"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quick"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="@dimen/text_large"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/first_mat_card_run"
+        android:layout_width="0dp"
+        android:alpha="0.8"
+        app:rippleColor="@color/white"
         android:layout_height="wrap_content"
-        android:text="@string/next"
+        android:layout_marginHorizontal="@dimen/space_medium"
+        android:backgroundTint="@color/green_600"
+        app:cardCornerRadius="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/first_mat_card_quick"
+        app:layout_constraintTop_toTopOf="@id/first_mat_card_quick">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/space_xsmall">
+
+            <TextView
+                android:textSize="@dimen/text_large"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="Start"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="@dimen/text_large"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Run"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/first_mat_card_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_medium"
+        android:backgroundTint="@color/white"
+        android:alpha="0.9"
+        android:clickable="true"
+        app:cardCornerRadius="10dp"
+        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+        app:layout_constraintTop_toBottomOf="@id/first_mat_card_quick">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/space_xsmall">
+
+            <TextView
+                android:textSize="@dimen/text_large"
+                android:textColor="?attr/colorOnSecondary"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="@dimen/text_large"
+                android:textColor="?attr/colorOnSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Statistics"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,4 +9,14 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+
+    <!-- About Me -->
+    <string name="about">About</string>
+    <string name="uri_github_nicolas_kargruber">https://github.com/NicolasKargruber</string>
+    <string name="uri_linkedin_nicolas_kargruber">https://www.linkedin.com/in/nicolas-kargruber-78a34123b/?locale=en_US</string>
+    <string name="navigation_drawer_open">Nav Drawer is open</string>
+    <string name="navigation_drawer_close">Nav Drawer is closed</string>
 </resources>
